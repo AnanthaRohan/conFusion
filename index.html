@@ -32,7 +32,7 @@
             
                 </ul>
                 <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a  id="aa"> 
                         <span class="fa fa-sign-in"></span> Login</a>
                     </span>
     </div>
@@ -44,7 +44,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login </h4>
+                    <h4 style="color: white"class="modal-title">Login </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -86,8 +86,8 @@
                         <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#" class="btn btn-warning btn-lg btn-block" role="button" data-toggle="modal"
-                    data-target="#tableModal">
+                    <a href="#" class="btn btn-warning btn-lg btn-block" role="button" id="ab"
+                    >
                     Reserve Table</a>
                         
                     </div>
@@ -100,7 +100,7 @@
                                 <!-- Modal content-->
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Reserve a Table </h4>
+                                        <h4 style="color: white" class="modal-title">Reserve a Table </h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <div class="modal-body">
@@ -421,8 +421,18 @@
             $("#carousel-play").click(function(){
                 $("#mycarousel").carousel('cycle');
             });
+            $("#aa").click(function(){
+            $('#loginModal').modal('toggle');
+            $('#loginModal').modal('show');
+          });
+          $("#ab").click(function(){
+            $('#tableModal').modal('toggle');
+            $('#tableModal').modal('show');
+});
+
         });
     </script>
+    
 
     <!--<script>
             $(document).ready(function(){
